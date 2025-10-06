@@ -1,4 +1,4 @@
-ARG BASE_IMG=registry.access.redhat.com/ubi9/ubi
+ARG BASE_IMG=<image-path>
 FROM $BASE_IMG AS buildah-runner
 RUN dnf -y update && \
 dnf -y install git && \
